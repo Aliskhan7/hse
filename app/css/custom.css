@@ -1,0 +1,38 @@
+.city-marker {
+	cursor: pointer;
+}
+
+.popover-body {
+	background-color: #E84F1C;
+	font-size: 12px;
+	line-height: 14px;
+	font-family: 'MuseoSansCyrl', sans-serif;
+	padding: 20px;
+}
+
+.popover-body .popover-hse {
+	display: flex;
+	flex-direction: column;
+	color: #ffffff;
+}
+
+.bs-popover-top > .arrow::after, .bs-popover-auto[x-placement^="top"] > .arrow::after {
+	border-top-color: #E84F1C;
+}
+
+.popover-hse .title {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: 19px;
+	padding-top: 0;
+}
+
+.popover-hse .title img {
+	padding-right: 3px;
+}
+
+.popover-hse span {
+	display: block;
+	padding-top: 8px;
+}

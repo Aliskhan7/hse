@@ -91,3 +91,10 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 800);
     });
 });
+
+$(function () {
+    $('[data-toggle="popover"]').popover({
+        html: true,
+        trigger: 'hover'
+    })
+})
