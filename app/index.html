@@ -19,6 +19,31 @@
     <title>HSE</title>
 </head>
 <body>
+    <div class="modal fade" id="exampleModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2>Оставить заявку</h2>
+                    <form id="form">
+                        <label for="name" class="label_name">Имя</label>
+                        <input id="name" type="text" name="name" class="form-control" placeholder="Введите имя" required x-autocompletetype="name">
+                        <label for="phone" class="label_phone">Номер телефона</label>
+                        <input id="phone" type="phone" name="phone" pattern="2[0-9]{3}-[0-9]{3}" class="form-control bg-form" placeholder="+7 ( ___ ) ___-__-__" required x-autocompletetype="tel">
+                        <div class="index__page-number">
+                            <button id="sendMail" type="submit" class="btn">Отправить</button>
+                            <p>Отправляя заявку, вы соглашаетесь на <a href="#">обработку персональных данных</a></p>
+                        </div>
+                    </form>
+                    <div id="errorMess"></div>
+                    <div id="mess"></div>
+                </div>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+    </div> 
+
     <header class="header">
             <!-- <div class="top-menu">
                 <div class="top-menu__left">
@@ -74,7 +99,8 @@
                     <div class="row">
                         <div class="col-12">
                             <nav class="navbar navbar-expand-md navbar-light">
-                                <a class="navbar-brand" href="index.html" target="_blank"><img src="img/logo.png" alt=""></a>	
+                                <a class="navbar-brand logo-white" href="index.html" target="_blank"><img src="img/logo.png" alt=""></a>
+
                                 
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
@@ -83,25 +109,25 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav py-4 py-md-0">
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a class="nav-link" href="#">О нас</a>
+                                            <a class="nav-link" href="#about">О нас</a>
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a class="nav-link" href="#">Клиенты</a>
+                                            <a class="nav-link" href="#client">Клиенты</a>
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a class="nav-link" href="#">Проекты</a>
+                                            <a class="nav-link" href="#project">Проекты</a>
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a class="nav-link" href="#">ПОДХОД</a>
+                                            <a class="nav-link" href="#appoach">ПОДХОД</a>
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a class="nav-link" href="#">УСЛУГИ</a>
+                                            <a class="nav-link" href="#services">УСЛУГИ</a>
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a class="nav-link" href="#">Лицензии</a>
+                                            <a class="nav-link" href="#licenses">Лицензии</a>
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a class="nav-link" href="#">Контакты</a>
+                                            <a class="nav-link" href="#contact">Контакты</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -118,7 +144,7 @@
                                             +7 (7172) <span>550 550</span>
                                         </a>
                                     </div>
-                                    <button class="btn">
+                                    <button class="btn" data-toggle="modal" data-target="#exampleModal">
                                         Оставить заявку
                                    </button>
                                 </div>
@@ -150,7 +176,7 @@
         </main>
     </header>
     <section>
-        <div class="container position-block">
+        <div class="container position-block" id="about">
             <div class="position__inner row">
                 <div class="position__inner_left col-lg-6">
                     <div class="position__inner_text">
@@ -170,7 +196,7 @@
     </section>
 
     <section>
-        <div class="container-fluid clients">
+        <div class="container-fluid clients" id="client">
             <div class="clients__inner row">
                 <div class="clients__inner_left col-lg-8">
                     <img src="./img/map.svg" alt="">
@@ -193,77 +219,80 @@
     </section>
 
     <section>
-        <div class="container-fluid project">
-            <div class="project__inner slider-one">
-                <h2>Наши проекты</h2>
-                <div class="slider-for">
-                    <div class="project__slide">
-                        <div class="project__slide_left">
-                            <img src="img/rossety.png" alt="">
-                        </div>
-                        <div class="project__slide_right">
-                            <div class="project__text_top">
-                                <h3>Диагностика культуры безопасности</h3>
-                                <p>Задачи</p>
-                                <ul>
-                                    <li>Оценка текущего уровня культуры безопасности</li>
-                                    <li>Выявление потенциальных барьеров, зон развития и возможностей для совершенствования</li>
-                                    <li>Формирование рекомендаций</li>
-                                </ul>
+        <div class="container-fluid">
+            <div class="project" id="project">
+                <div class="project__inner slider-one">
+                    <h2>Наши проекты</h2>
+                    <div class="slider-for">
+                        <div class="project__slide">
+                            <div class="project__slide_left">
+                                <img src="img/rossety.png" alt="">
                             </div>
-                            <div class="project__text_bottom">
-                                <p>Результаты</p>
-                                <ul>
-                                    <li>Детальный отчет с описанием текущей ситуации и узких мест</li>
-                                    <li>Разработаны рекомендации на основании полученных данных</li>
-                                    <li>Сформированы мероприятия по развитию HSE культуры</li>
-                                    <li>Проведена стратегическая сессия для руководства компании</li>
-                                </ul>
+                            <div class="project__slide_right">
+                                <div class="project__text_top">
+                                    <h3>Диагностика культуры безопасности</h3>
+                                    <p>Задачи</p>
+                                    <ul>
+                                        <li>Оценка текущего уровня культуры безопасности</li>
+                                        <li>Выявление потенциальных барьеров, зон развития и возможностей для совершенствования</li>
+                                        <li>Формирование рекомендаций</li>
+                                    </ul>
+                                </div>
+                                <div class="project__text_bottom">
+                                    <p>Результаты</p>
+                                    <ul>
+                                        <li>Детальный отчет с описанием текущей ситуации и узких мест</li>
+                                        <li>Разработаны рекомендации на основании полученных данных</li>
+                                        <li>Сформированы мероприятия по развитию HSE культуры</li>
+                                        <li>Проведена стратегическая сессия для руководства компании</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="slider-nav">
-                    <div class="slider-nav-logo slider-nav-rossety">
-                        <img src="img/rossity2.png" alt="">
-                    </div>
-                    <div class="slider-nav-logo">
-                        <img src="img/Shell.png" alt="">
-                    </div>
-                    <div class="slider-nav-logo">
-                        <img src="img/kara.png" alt="">
-                    </div>
-                    <div class="slider-nav-logo">
-                        <img src="img/tcd.png" alt="">
-                    </div>
-                    <div class="slider-nav-logo">
-                        <img src="img/meti.png" alt="">
-                    </div>
-                    <div class="slider-nav-logo">
-                        <img src="img/gaz.png" alt="">
-                    </div>
-                    <div class="slider-nav-logo">
-                        <img src="img/ars.png" alt="">
-                    </div>
-                    <div class="slider-nav-rossety">
-                        <img src="img/ktk.png" alt="">
-                    </div>
-                    <div class="slider-nav-logo">
-                        <img src="img/euro.png" alt="">
-                    </div>
-                    <div class="slider-nav-logo">
-                        <img src="img/kaz.png" alt="">
-                    </div>
-                    <div class="slider-nav-logo">
-                        <img src="img/inter.png" alt="">
+                    <div class="slider-nav">
+                        <div class="slider-nav-logo slider-nav-rossety">
+                            <img src="img/rossity2.png" alt="">
+                        </div>
+                        <div class="slider-nav-logo">
+                            <img src="img/Shell.png" alt="">
+                        </div>
+                        <div class="slider-nav-logo">
+                            <img src="img/kara.png" alt="">
+                        </div>
+                        <div class="slider-nav-logo">
+                            <img src="img/tcd.png" alt="">
+                        </div>
+                        <div class="slider-nav-logo">
+                            <img src="img/meti.png" alt="">
+                        </div>
+                        <div class="slider-nav-logo">
+                            <img src="img/gaz.png" alt="">
+                        </div>
+                        <div class="slider-nav-logo">
+                            <img src="img/ars.png" alt="">
+                        </div>
+                        <div class="slider-nav-logo">
+                            <img src="img/ktk.png" alt="">
+                        </div>
+                        <div class="slider-nav-logo">
+                            <img src="img/euro.png" alt="">
+                        </div>
+                        <div class="slider-nav-logo">
+                            <img src="img/kaz.png" alt="">
+                        </div>
+                        <div class="slider-nav-logo">
+                            <img src="img/inter.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </section>
 
     <section>
-        <div class="container level">
+        <div class="container level" id="appoach">
             <div class="row level__inner">
                 <div class="col-lg-6 level__inner_left">
                     <img src="img/level.svg" alt="">
@@ -286,15 +315,15 @@
     </section>
 
     <section>
-        <div class="command">
+        <div class="command" id="services">
             <div class="container command__inner row">
                 <div class="col-lg-4 command__inner_left">
                     <img src="img/alex.png" alt="">
                     <div class="command__inner_bio">
                         <h2>Александр Чугунов</h2>
                         <p>Руководитель Smart HSE</p>
-                        <a href="">a.chugunov@abiroy.com</a>
-                        <a href="">+7 917 887 67 26</a>
+                        <a class="email-command" href="">a.chugunov@abiroy.com</a>
+                        <a class="call-command" href="">+7 917 887 67 26</a>
                     </div>
                 </div>
                 <div class="col-lg-8 command__inner_right">
@@ -316,7 +345,7 @@
             <h2>Компоненты эффективного проекта</h2>
             <div class="component__inner">
                 <div class="component__inner_item">
-                    <h3>Консалтинг</h3>
+                    <h3 class="icon-cons">Консалтинг</h3>
                     <p>
                         Вызовы современного мира показывают, что для 
                         результативного проекта по корпоративным HSE изменениям одного 
@@ -325,25 +354,25 @@
                     </p>
                 </div>
                 <div class="component__inner_item">
-                    <h3>Тренинг</h3>
+                    <h3 class="icon-tren">Тренинг</h3>
                     <p>
                         Мы понимаем, что курсы по Промышленной безопасности вы способны организовать и проводить самостоятельно. Но как их не просто перевести в онлайн, а выстроить систему обучения?! Как обеспечить развитие компетенций на уровне руководителей, работников компании и подрядных организаций? Как через обучение обеспечить сопровождение изменений? По этим вопросам, вам к нам.
                     </p>
                 </div>
                 <div class="component__inner_item">
-                    <h3>коммуникации</h3>
+                    <h3 class="icon-com">коммуникации</h3>
                     <p>
                         Безусловно, любой проект по изменениям требует грамотной внутренней коммуникации. Разработка и реализация эффективной коммуникационной кампании — сложный ПРОЕКТ, требующий интеграции маркетинговой и технологической экспертизы
                     </p>
                 </div>
                 <div class="component__inner_item">
-                    <h3>Диджитал</h3>
+                    <h3 class="icon-digital">Диджитал</h3>
                     <p>
                         Работа компаний в эпоху цифровизации и посткоронакризиса уже немыслима без цифровых решений.
                     </p>
                 </div>
                 <div class="component__inner_item">
-                    <h3>Ресоринг</h3>
+                    <h3 class="icon-resor">Ресоринг</h3>
                     <p>
                         Чтобы обеспечить качественные изменения необходимо оценивать и подбирать новых сотрудников. Вы понимаете, что для изменений на корпоративном уровне вы полагаетесь на внутренниие ресурсы. Мы помогаем определить наиболее компетентных и перспективных сотрудников, в которых необходимо инвестировать, чтобы был требуемый результат. При этом иногда клиенты просят им помочь с внешним рекрутментом, чтобы внести свежую волну в коллектив с устоявшимися знаниями и опытом.
                     </p>
@@ -353,7 +382,7 @@
     </section>
 
     <section>
-        <div class="license">
+        <div class="license" id="licenses">
             <div class="container">
                 <div class="license__title">
                     <h2>Лицензии</h2>
@@ -377,16 +406,35 @@
     </section>
 
     <section>
-        <div class="container contact">
+        <div class="container contact" id="contact">
             <h2>Наши контакты</h2>
             <div class="row contact__inner">
                 <div class="col-lg-7 contact__inner_left">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.290336109953!2d48.74120951603531!3d55.75345849940864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415bfe683bcf82d7%3A0xe9a6e31ad274fd59!2z0J7QvtC-ICLQkNCx0LjRgNC-0Lki!5e0!3m2!1sru!2sru!4v1595253911135!5m2!1sru!2sru" width="100%" height="750" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad68168b1a196bf7599852bad393451c075ffa1d337ae30e91531cbe901407e3e&amp;source=constructor" width="937" height="616" frameborder="0"></iframe>
                 </div>
                 <div class="col-lg-5 contact__inner_right">
+
+
+
+
                     <div class="contact__inner_option">
                         <span>Выберите город (страну)</span>
-                        <select name="" id="select">
+
+
+
+                        <div class="dropdown" id="dropdown">
+                            <button type="button" class="btn-primary dropdown-toggle" data-toggle="dropdown">
+                              Dropdown button
+                            </button>
+                            <div class="dropdown-menu" id="dropdown">
+                              <a class="dropdown-item" data-target="1">Link 1</a>
+                              <a class="dropdown-item" data-target="2">Link 2</a>
+                              <a class="dropdown-item" data-target="3">Link 3</a>
+                            </div>
+                          </div>
+
+
+                        <!-- <select name="" id="select">
                             <option data-value="1">
                                 Иннополис (Россия)
                             </option>
@@ -396,7 +444,7 @@
                             <option data-value="3">
                                 И (Россия)
                             </option>
-                        </select>
+                        </select> -->
                     </div>
 
                         <div class="select__content">
@@ -439,7 +487,8 @@
     <script src="libs/slick/slick.min.js"></script>
     <!--  эти тоже поменяй <script src="js/slick.min.js"></script> -->
     <script src="js/jquery.magnific-popup.js"></script>
-	<script src="js/common.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

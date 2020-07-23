@@ -28,6 +28,10 @@
     margin: 0;
     padding: 0;
 }
+.slick-slide:focus
+{
+    outline: none;
+}
 .slick-list:focus
 {
     outline: none;
