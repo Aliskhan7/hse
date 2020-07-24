@@ -2714,14 +2714,19 @@
 
                     <div class="contact__inner_option">
                         <span>Выберите город (страну)</span>
-						<div class="dropdown">
-							<button type="button" class="btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+						<div class="dropdown" id="hse-dropdown">
+							<button class="dropdown-toggle"
+									type="button"
+									id="dropdownMenuButton"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false">
 								Иннополис (Россия)
 							</button>
-							<div class="dropdown-menu">
-							  <a class="dropdown-item" data-toggle="tab" href="#tab1">Link 1</a>
-							  <a class="dropdown-item" data-toggle="tab" href="#tab2">Link 2</a>
-							  <a class="dropdown-item" data-toggle="tab" href="#tab2">Link 3</a>
+							<div class="dropdown-menu"  aria-labelledby="dropdownMenuButton">
+							  <a class="dropdown-item" data-toggle="tab" href="#tab1">Иннополис (Россия)</a>
+							  <a class="dropdown-item" data-toggle="tab" href="#tab2">Нур-Султан (Казахстан)</a>
+							  <a class="dropdown-item" data-toggle="tab" href="#tab3">Атырау (Казахстан)</a>
 							</div>
 						</div>
 
@@ -2772,7 +2777,27 @@
 								<p>Заключаются в том, что имеется удобная инфраструктура для жизни, удобная локация для выполнения консалтинговых проектов, доступность базы IT решений</p>
 							</div>
 						</div>
-						<div class="select__content_item tab-pane fade" id="tab2">Какой-то текст № 2</div>
+						<div class="select__content_item tab-pane fade" id="tab2">
+							<p>Выполняя проекты в разных регионах и странах, наши постоянные офисы находятся в городе Иннополис (Россия) и городах Нур-Султан и Атырау (Казахстан).</p>
+							<div class="select__form">
+								<div class="select__form_adress">
+									<span>Адрес</span>
+									<p>010000, г.Нур-Султан, ул. Сыганак, 25
+										БЦ «Ансар», 5 этаж</p>
+								</div>
+								<div class="select__form_phone">
+									<span>Телефон</span>
+									<a href="">+ 7 (7172) 550 550</a>
+								</div>
+								<button class="btn">
+									Оставить заявку
+								</button>
+							</div>
+							<!--div class="select-text">
+								<h5>Преимущества Иннополиса</h5>
+								<p>Заключаются в том, что имеется удобная инфраструктура для жизни, удобная локация для выполнения консалтинговых проектов, доступность базы IT решений</p>
+							</div-->
+						</div>
 						<div class="select__content_item tab-pane fade" id="tab3">Какой-то текст № 3</div>
 					</div>
 					

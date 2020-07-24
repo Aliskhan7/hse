@@ -104,3 +104,9 @@ $(function () {
         trigger: 'hover'
     })
 })
+
+$('#hse-dropdown a').click(function() {
+    $('#hse-dropdown .active').removeClass('active');
+    $('.btn:first-child').text($(this).text());
+    $('.btn:first-child').val($(this).text());
+})

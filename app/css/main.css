@@ -904,6 +904,9 @@ a:hover {
         /* identical to box height, or 130% */
         color: #000000;
         margin-bottom: 14px; }
+      .contact__inner_right .contact__inner_option .dropdown {
+        position: relative;
+        max-width: 288px; }
       .contact__inner_right .contact__inner_option .dropdown-toggle {
         font-family: 'MuseoSansCyrl700', sans-serif;
         background: rgba(255, 255, 255, 0.4);
@@ -916,7 +919,16 @@ a:hover {
         padding: 17px 14px;
         margin-bottom: 17px;
         text-align: left;
-        color: #4B4A49; }
+        color: #4B4A49;
+        position: relative; }
+        .contact__inner_right .contact__inner_option .dropdown-toggle:after {
+          position: absolute;
+          right: 20px;
+          top: 27px; }
+      .contact__inner_right .contact__inner_option .dropdown-menu {
+        width: 100%; }
+      .contact__inner_right .contact__inner_option .dropdown-item.active, .contact__inner_right .contact__inner_option .dropdown-item:active {
+        background-color: #E84F1C; }
     .contact__inner_right .select__content {
       width: 570px;
       margin-left: 50px; }
