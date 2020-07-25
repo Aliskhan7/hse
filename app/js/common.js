@@ -50,10 +50,35 @@ $('.slider-for').slick({
     slidesToShow: 10,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
-    
     arrows: true,
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 6,
+            }
+          },
+          {
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 7,
+            }
+          },
+	    {
+	      breakpoint: 767,
+	      settings: {
+	        slidesToShow: 4,
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    }
+    ]
   });
 
 
@@ -62,6 +87,32 @@ $('.slider-for').slick({
     slidesToShow: 9,
     slidesToScroll: 3,
     arrows: true,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 6,
+            }
+          },
+          {
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 5,
+            }
+          },
+	    {
+	      breakpoint: 767,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    }
+    ]
   });
 
   $('.popup-gallery').magnificPopup({

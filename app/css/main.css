@@ -121,7 +121,7 @@ a:hover {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
-  padding: 35px 75px;
+  padding: 35px 25px;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
@@ -131,6 +131,12 @@ a:hover {
 
 .logo-white {
   display: none; }
+
+.navbar-expand-md .navbar-collapse {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .start-header.scroll-on {
   -webkit-box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
@@ -930,7 +936,7 @@ a:hover {
       .contact__inner_right .contact__inner_option .dropdown-item.active, .contact__inner_right .contact__inner_option .dropdown-item:active {
         background-color: #E84F1C; }
     .contact__inner_right .select__content {
-      width: 570px;
+      max-width: 570px;
       margin-left: 50px; }
       .contact__inner_right .select__content_item p {
         font-size: 16px;

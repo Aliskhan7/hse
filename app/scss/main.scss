@@ -134,7 +134,7 @@ a{
 .start-header {
 	opacity: 1;
 	transform: translateY(0);
-	padding: 35px 75px;
+	padding: 35px 25px;
 	-webkit-transition : all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 }
@@ -144,6 +144,10 @@ a{
 
 .logo-white{
     display: none;
+}
+
+.navbar-expand-md .navbar-collapse{
+    justify-content: space-between;
 }
 
 .start-header.scroll-on {
@@ -425,6 +429,7 @@ a{
             font-family: 'MuseoSansCyrl', sans-serif;
         }
     }
+    
 }
 
 .project{
@@ -997,7 +1002,7 @@ a{
 	            }
             }
             .select__content{
-                width: 570px;
+                max-width: 570px;
                 margin-left: 50px;
                 &_item{
                     p{
@@ -1073,3 +1078,6 @@ a{
   .select__content_item.active {
     display: block;
   }
+
+
+
