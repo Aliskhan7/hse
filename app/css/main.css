@@ -124,7 +124,7 @@ a:hover {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
-  padding: 35px 25px;
+  padding: 35px 5px;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
@@ -415,6 +415,9 @@ a:hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .clients__inner_left svg {
+    max-width: 100%;
+    height: auto; }
   .clients__inner_text {
     max-width: 470px; }
     .clients__inner_text h2 {
@@ -878,7 +881,7 @@ a:hover {
       height: 20px; }
 
 .contact {
-  padding: 80px 0 140px; }
+  padding: 80px 30px 100px 30px; }
   .contact h2 {
     font-weight: 900;
     font-size: 42px;

@@ -139,7 +139,7 @@ a{
 .start-header {
 	opacity: 1;
 	transform: translateY(0);
-	padding: 35px 25px;
+	padding: 35px 5px;
 	-webkit-transition : all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 }
@@ -414,6 +414,12 @@ a{
 .clients__inner{
     display: flex;
     align-items: center;
+    &_left{
+        svg{
+            max-width: 100%;
+            height: auto;
+        }
+    }
     &_text{
         max-width: 470px;
         h2{
@@ -947,7 +953,7 @@ a{
 
 
 .contact{
-    padding: 80px 0 140px;
+    padding: 80px 30px 100px 30px;
     h2{
         font-weight: 900;
         font-size: 42px;
