@@ -1,4 +1,105 @@
-@media (max-width: 767px) and (min-width: 350px){
+
+
+
+
+@media (max-width: 600px) and (min-width: 320px){
+    .level__inner_right .level__inner_text{
+        max-width: 90%;
+    }
+    .component__inner_item{
+        width: 300px;
+    }
+    .position-block .position__inner_left .position__inner_text h2{
+        font-size: 30px;
+    }
+    .main__inner_subtitle{
+        h1{
+            font-size: 90px;
+            line-height: 90px;
+        }
+        p{
+            font-size: 18px;
+        }
+        ul{
+           font-size: 14px; 
+        }
+    }
+    .main__inner_suptitle{
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .component__inner_item{
+        margin-right: 0;
+    }
+    .command__inner_left .command__inner_bio a{
+        width: 200px;
+    }
+    .contact__inner{
+        flex-direction: column;
+    }
+    .contact__inner_left{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) and (min-width: 320px){
+    .project__inner .slick-next{
+        right: -15px;
+    }
+    .main__inner_subtitle{
+        top: 60%;
+    }
+    .project{
+        padding: 60px 0;
+    }
+    .project__inner .project__slide_left img {
+        max-width: 250px;
+        height: 70px;
+    }
+    h2, h4, h5{
+        font-size: 25px !important;
+        line-height: 31px !important;
+    }
+    .main__inner_subtitle{
+        h1{
+            font-size: 70px;
+        }
+        ul{
+            font-size: 8px;
+        }
+    }
+    .position-block .position__inner_left .position__inner_text h2{
+        font-size: 25px;
+    }
+    .command__inner_right .command__inner_text h2{
+        font-size: 30px;
+    }
+    .component{
+        h2{
+            font-size: 30px; 
+        }
+        &__inner{
+            &_item{
+                width: 170px;
+            }
+        }
+    }
+    .contact__inner_right .select__content{
+        width: 280px;
+    }
+    
+    .main__inner_suptitle{
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 767px) and (min-width: 320px){
     .clients__inner_left{
         svg{
             max-width: 100%;
@@ -47,14 +148,76 @@
         padding: 100px 0;
     }
     .contact{
+        padding-bottom: 100px;
         &__inner_left{
             margin-bottom: 50px;
+        }
+        .select__form_phone{
+            margin-bottom: 20px;
         }
     }
     
 }
 
+
+@media (max-width: 767px) { 
+    .navbar-menu__right{
+        flex-direction: column;
+    }
+	h1{
+		font-size: 38px;
+	}
+	.nav-item:after{
+		display: none;
+	}
+	.nav-item::before {
+		position: absolute;
+		display: block;
+		top: 15px;
+		left: 0;
+		width: 11px;
+		height: 1px;
+		content: "";
+		border: none;
+		background-color: #000;
+		vertical-align: 0;
+	}
+	.dropdown-toggle::after {
+		position: absolute;
+		display: block;
+		top: 10px;
+		left: -23px;
+		width: 1px;
+		height: 11px;
+		content: "";
+		border: none;
+		background-color: #000;
+		vertical-align: 0;
+		transition: all 200ms linear;
+	}
+	.dropdown-toggle[aria-expanded="true"]::after{
+		transform: rotate(90deg);
+		opacity: 0;
+	}
+	.dropdown-menu {
+		padding: 0 !important;
+		background-color: transparent;
+		box-shadow: none;
+		transition: all 200ms linear;
+	}
+	.dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+		margin-top: 10px !important;
+		margin-bottom: 20px !important;
+	}
+}
+
 @media (max-width: 1350px) and (min-width: 767px){
+    .contact{
+        padding: 50px 15px;
+    }
+    .contact__inner_right{
+        margin-left: 30px;
+    }
     .nav-link{
         font-size: 12px;
     }
@@ -75,6 +238,12 @@
     }
 }
 @media (max-width: 1140px) { 
+    .contact__inner{
+        flex-direction: column;
+    }
+    .contact__inner_left{
+        width: 100%;
+    }
 	.nav-item:after{
 		display: none;
 	}
@@ -119,11 +288,9 @@
 	}
 }
 @media (max-width: 1000px){
+    
     .clients__inner{
         flex-direction: column-reverse;
-        &_right{
-            margin-left: 30px;
-        }
     }
     .contact__inner_right {
         .contact__inner_option{
@@ -138,5 +305,11 @@
     }
     .command__inner_right .command__inner_text{
         margin-left: 0;
+    }
+}
+
+@media (max-width: 460px) and (min-width: 360px){
+    .component__inner_item{
+        width: 230px;
     }
 }

@@ -25,6 +25,8 @@ h1, h2, h3, h4, h5{
 
 
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -37,6 +39,7 @@ a{
         text-decoration: none;
     }
 }
+
 .modal-dialog{
     button.close{
         position: absolute;
@@ -106,8 +109,6 @@ a{
     
 }
 
-
-
 .btn{
     background: $orange;
     box-shadow: 0px 15px 20px rgba(143, 43, 10, 0.15);
@@ -118,6 +119,10 @@ a{
         background-color: $hoverClr;
         transition: all 200ms linear;
     }
+}
+
+.white{
+    background-color: #fff;
 }
 
 
@@ -276,7 +281,6 @@ a{
     .phone__nemu{
         margin-right: 32px;
         p{
-            font-weight: 100;
             font-size: 14px;
             line-height: 17px; 
             color: #fff;
@@ -715,7 +719,8 @@ a{
                     margin-bottom: 12px;
                 }
                 .email-command{
-                    position: relative;
+                    width: 200px;
+                        position: relative;
                         left: 29px;
                         margin-bottom: 15px;
                         &:before{
@@ -732,6 +737,7 @@ a{
                         }
                 }
                 .call-command{
+                    width: 200px;
                     position: relative;
                         left: 29px;
                         margin-bottom: 15px;
@@ -955,6 +961,10 @@ a{
         display: flex;
         align-items: center;
         margin-top: 75px;
+        justify-content: center;
+        &_left{
+            width: 937px;
+        }
         &_right{
             .contact__inner_option{
                 display: flex;

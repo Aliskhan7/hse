@@ -108,6 +108,9 @@ a:hover {
     -o-transition: all 200ms linear;
     transition: all 200ms linear; }
 
+.white {
+  background-color: #fff; }
+
 .header {
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
@@ -284,7 +287,6 @@ a:hover {
   .navbar-menu__right .phone__nemu {
     margin-right: 32px; }
     .navbar-menu__right .phone__nemu p {
-      font-weight: 100;
       font-size: 14px;
       line-height: 17px;
       color: #fff;
@@ -697,6 +699,7 @@ a:hover {
           color: #E84F1C;
           margin-bottom: 12px; }
         .command__inner_left .command__inner_bio .email-command {
+          width: 200px;
           position: relative;
           left: 29px;
           margin-bottom: 15px; }
@@ -712,6 +715,7 @@ a:hover {
             width: 18px;
             height: 15px; }
         .command__inner_left .command__inner_bio .call-command {
+          width: 200px;
           position: relative;
           left: 29px;
           margin-bottom: 15px; }
@@ -891,7 +895,13 @@ a:hover {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 75px; }
+    margin-top: 75px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .contact__inner_left {
+      width: 937px; }
     .contact__inner_right .contact__inner_option {
       display: -webkit-box;
       display: -webkit-flex;

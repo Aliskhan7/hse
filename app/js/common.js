@@ -1,7 +1,6 @@
 
 $(function() {
     var header = $(".start-style");
-    var navbarbrand = $(".navbar-brand");
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
     
@@ -16,10 +15,17 @@ $(function() {
             $(".brand-none").removeClass("logo-white");
             $(".brand-black").addClass("logo-black");
         }
-
-
     });
+    $("#btn-menu").click(function() {
+        var bgMenu = $(".start-header");
+        bgMenu.removeClass('start-style').addClass("scroll-on");
+        $(".brand-none").addClass("logo-white");
+        $(".brand-black").removeClass("logo-black");
+    });
+
 });		
+
+
     
 //Animation
 
@@ -77,7 +83,13 @@ $('.slider-for').slick({
 	      settings: {
 	        slidesToShow: 1,
 	      }
-	    }
+        },
+        {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
     ]
   });
 
@@ -111,7 +123,13 @@ $('.slider-for').slick({
 	      settings: {
 	        slidesToShow: 1,
 	      }
-	    }
+        },
+        {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
     ]
   });
 
