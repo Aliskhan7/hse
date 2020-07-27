@@ -252,6 +252,9 @@ a{
 	padding: 5px 0 !important;
     display: inline-block;
     text-transform: uppercase;
+	@media (max-width: 1480px) {
+		font-size: 14px;
+	}
 }
 .nav-item:after{
 	position: absolute;
@@ -309,6 +312,10 @@ a{
     left: 50%;
     transform: translate(-50%, -50%);
     height: 100%;
+	min-width: 770px;
+	@media (max-width: 1000px) {
+		min-width: auto;
+	}
         &_subtitle{
             position: relative;
             transform: translate(-50%, -50%);
