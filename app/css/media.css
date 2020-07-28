@@ -196,7 +196,16 @@
   .component__inner_item {
     width: 340px; }
   .contact__inner_right .select__content_item .select__form {
-    max-width: 320px; } }
+    max-width: 320px; }
+  .select__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .select__form .btn {
+      margin-top: 30px;
+      max-width: 191px; } }
 
 @media (max-width: 1120px) and (min-width: 767px) {
   .navbar-menu__right .btn {

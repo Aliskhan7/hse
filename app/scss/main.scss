@@ -1034,7 +1034,6 @@ a{
                     .select__form{
                         display: flex;
                         flex-wrap: wrap;
-                        flex-direction: column;
                         &_adress{
                             width: 284px;
                             display: flex;
@@ -1047,9 +1046,6 @@ a{
                             display: flex;
                             flex-direction: column;
                             
-                        }
-                        .btn{
-                            max-width: 191px;
                         }
                         span{
                             

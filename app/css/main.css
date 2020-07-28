@@ -966,12 +966,7 @@ a:hover {
         display: flex;
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; }
+                flex-wrap: wrap; }
         .contact__inner_right .select__content_item .select__form_adress {
           width: 284px;
           display: -webkit-box;
@@ -996,8 +991,6 @@ a:hover {
           -webkit-flex-direction: column;
               -ms-flex-direction: column;
                   flex-direction: column; }
-        .contact__inner_right .select__content_item .select__form .btn {
-          max-width: 191px; }
         .contact__inner_right .select__content_item .select__form span {
           font-size: 14px;
           line-height: 24px;
