@@ -60,6 +60,17 @@
     display: none; } }
 
 @media (max-width: 767px) and (min-width: 320px) {
+  .main__inner_suptitle {
+    display: none; }
+  .main__inner_subtitle ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px; }
+    .main__inner_subtitle ul li {
+      margin-bottom: 10px; }
   .clients__inner_left svg {
     max-width: 100%;
     height: auto; }
@@ -155,24 +166,50 @@
     margin-top: 10px !important;
     margin-bottom: 20px !important; } }
 
+@media (max-width: 1270px) and (min-width: 767px) {
+  .main__inner_suptitle {
+    display: none; }
+  .main__inner_subtitle ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px; }
+    .main__inner_subtitle ul li {
+      margin-bottom: 10px; } }
+
 @media (max-width: 1440px) and (min-width: 767px) {
   .navbar-menu__right .btn {
     padding: 14px 11px;
     font-size: 14px; }
   .navbar-menu__right p, .navbar-menu__right a {
-    font-size: 10px !important; }
+    font-size: 14px !important; }
   .navbar-menu__right .phone__nemu {
     margin-right: 20px; }
   .nav-item {
-    margin-left: 10px !important; }
+    margin-left: 12px !important; }
     .nav-item .nav-link {
-      font-size: 10px; }
+      font-size: 14px; }
   .command__inner {
     padding: 80px 145px; }
   .component__inner_item {
     width: 340px; }
   .contact__inner_right .select__content_item .select__form {
     max-width: 320px; } }
+
+@media (max-width: 1120px) and (min-width: 767px) {
+  .navbar-menu__right .btn {
+    padding: 14px 11px;
+    font-size: 14px; }
+  .navbar-menu__right p, .navbar-menu__right a {
+    font-size: 12px !important; }
+  .navbar-menu__right .phone__nemu {
+    margin-right: 15px; }
+  .nav-item {
+    margin-left: 12px !important; }
+    .nav-item .nav-link {
+      font-size: 12px; } }
 
 @media (max-width: 1350px) and (min-width: 767px) {
   .contact {

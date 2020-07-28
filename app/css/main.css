@@ -145,7 +145,7 @@ a:hover {
   -webkit-box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
           box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
   background-color: #fff;
-  padding: 10px 15px;
+  padding: 10px 5px;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
@@ -415,9 +415,11 @@ a:hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .clients__inner_left svg {
-    max-width: 100%;
-    height: auto; }
+  .clients__inner_left {
+    padding: 0 !important; }
+    .clients__inner_left svg {
+      max-width: 100%;
+      height: auto; }
   .clients__inner_text {
     max-width: 470px; }
     .clients__inner_text h2 {
