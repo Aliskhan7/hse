@@ -33,7 +33,7 @@
         }
     }
     .component__inner_item{
-        margin-right: 0;
+        margin-left: 0;
     }
     .command__inner_left .command__inner_bio a{
         width: 200px;
@@ -106,6 +106,7 @@
     .main__inner_subtitle ul{
         flex-direction: column;
         margin-top: 30px;
+        text-align: center;
         li{
             margin-bottom: 10px;
         }
@@ -226,6 +227,7 @@
     .main__inner_subtitle ul{
         flex-direction: column;
         margin-top: 30px;
+        text-align: center;
         li{
             margin-bottom: 10px;
         }

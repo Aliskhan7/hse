@@ -17,7 +17,7 @@
   .main__inner_suptitle p {
     font-size: 18px; }
   .component__inner_item {
-    margin-right: 0; }
+    margin-left: 0; }
   .command__inner_left .command__inner_bio a {
     width: 200px; }
   .contact__inner {
@@ -68,7 +68,8 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 30px; }
+    margin-top: 30px;
+    text-align: center; }
     .main__inner_subtitle ul li {
       margin-bottom: 10px; }
   .clients__inner_left svg {
@@ -175,7 +176,8 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 30px; }
+    margin-top: 30px;
+    text-align: center; }
     .main__inner_subtitle ul li {
       margin-bottom: 10px; } }
 
