@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link href="css/aos.css" rel="stylesheet">
 
     <!--GULP ПОЛНОСТЬЮ НЕ ДОРАБОТАН-->
     <!-- перетащи бустрап, магнифик и слики как сделаешь билд -->
@@ -113,11 +114,11 @@
                         <h1>Smart hse</h1>
                         <p>Интегратор корпоративных HSE проектов</p>
                         <ul>
-                            <li>Консалтинг</li>
-                            <li>Тренинг</li>
-                            <li>Коммуникации</li>
-                            <li>Диджитал</li>
-                            <li>Ресоринг</li>
+                            <li><a class="main_link" href="#component">Консалтинг</a></li>
+                            <li><a class="main_link" href="#component">Тренинг</a></li>
+                            <li><a class="main_link" href="#component">Коммуникации</a></li>
+                            <li><a class="main_link" href="#component">Диджитал</a></li>
+                            <li><a class="main_link" href="#component">Ресоринг</a></li>
                         </ul>
                     </div>
                     <div class="main__inner_suptitle">
@@ -127,9 +128,11 @@
 
             </div>
         </main>
-    </header>
+	</header>
+	
+
     <section>
-        <div class="container-width m-auto position-block" id="about">
+        <div class="container-width m-auto position-block" id="about" >
 			<div class="container">
 				<div class="position__inner row">
 					<div class="position__inner_left col-lg-6">
@@ -154,7 +157,7 @@
         <div class="container-fluid clients" id="client">
 			
 				<div class="clients__inner row">
-					<div class="clients__inner_left col-lg-8">
+					<div class="clients__inner_left col-lg-6">
 						<!--img src="./img/map.svg" alt=""-->
 						<svg width="1141" height="865" viewBox="0 0 1141 865" fill="none"
 							 xmlns="http://www.w3.org/2000/svg">
@@ -2502,7 +2505,7 @@
 							</defs>
 						</svg>
 					</div>
-					<div class="clients__inner_right col-lg-4">
+					<div class="clients__inner_right col-lg-6">
 						<div class="clients__inner_text">
 							<h2>Наши клиенты</h2>
 							<p>Нас выбирают крупные производственные компании для разработки и внедрения результативных проектов.
@@ -2526,10 +2529,10 @@
 				<h2>Наши проекты</h2>
 				<div class="slider-for">
 					<div class="project__slide">
-						<div class="project__slide_left">
+						<div class="project__slide_left" data-aos="fade-right">
 							<img src="img/rossety.png" alt="">
 						</div>
-						<div class="project__slide_right">
+						<div class="project__slide_right" data-aos="fade-left">
 							<div class="project__text_top">
 								<h3>Диагностика культуры безопасности</h3>
 								<p>Задачи</p>
@@ -2645,7 +2648,7 @@
     </section>
 
     <section>
-        <div class="container-width m-auto component">
+        <div class="container-width m-auto component" id="component">
             <h2>Компоненты эффективного проекта</h2>
             <div class="component__inner">
                 <div class="component__inner_item">
@@ -2818,12 +2821,17 @@
 
 
     <script src="libs/jquery/dist/jquery.min.js"></script>
-    <!--  <script src="js/libs.min.js"></script> -->
+	<!--  <script src="js/libs.min.js"></script> -->
+	<script src="js/aos.js"></script>
     <script src="libs/slick/slick.min.js"></script>
-    <!--  эти тоже поменяй <script src="js/slick.min.js"></script> -->
+	<!--  эти тоже поменяй <script src="js/slick.min.js"></script> -->
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/common.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script>
+		AOS.init();
+	  </script>
 </body>
 </html>

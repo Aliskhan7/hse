@@ -340,14 +340,17 @@ a:hover {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      list-style: none;
-      font-size: 16px;
-      line-height: 24px;
-      text-align: center;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      font-family: 'MuseoSansCyrl', sans-serif; }
+      list-style: none; }
+      .main__inner_subtitle ul a {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-family: 'MuseoSansCyrl', sans-serif; }
+        .main__inner_subtitle ul a:hover {
+          color: #D7410F; }
   .main__inner_suptitle {
     position: absolute;
     bottom: 70px; }
@@ -421,6 +424,7 @@ a:hover {
       max-width: 100%;
       height: auto; }
   .clients__inner_text {
+    margin: auto;
     max-width: 470px; }
     .clients__inner_text h2 {
       font-weight: 900;
@@ -780,7 +784,7 @@ a:hover {
     .component__inner_item {
       max-width: 438px;
       margin-bottom: 100px;
-      margin-right: 70px; }
+      margin-left: 80px; }
       .component__inner_item h3 {
         font-weight: 900;
         font-size: 20px;

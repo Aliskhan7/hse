@@ -335,14 +335,18 @@ a{
                 display: flex;
                 justify-content: space-between;
                 list-style: none;
-                font-size: 16px;
+                a{
+                font-size: 18px;    
                 line-height: 24px;
                 text-align: center;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
                 color: #FFFFFF;
                 font-family: 'MuseoSansCyrl', sans-serif;
-            
+                &:hover{
+                    color: $hoverClr;
+                }
+                }
             }
         }
         &_suptitle{
@@ -422,6 +426,7 @@ a{
         }
     }
     &_text{
+        margin: auto;
         max-width: 470px;
         h2{
             font-weight: 900;
@@ -811,7 +816,7 @@ a{
         &_item{
             max-width: 438px;
             margin-bottom: 100px;
-            margin-right: 70px;
+            margin-left: 80px;
             h3{
                 font-weight: 900;
                 font-size: 20px;
